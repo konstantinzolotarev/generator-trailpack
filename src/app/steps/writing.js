@@ -12,6 +12,7 @@ export default {
   files () {
     this.fs.copy(path.resolve(TRAILS_TEMPLATE, 'api', '**'), this.destinationPath('api'))
     this.fs.copy(path.resolve(TRAILS_TEMPLATE, 'config', '**'), this.destinationPath('config'))
+    this.fs.copy(path.resolve(TRAILS_TEMPLATE, 'docs', '**'), this.destinationPath('config'))
     this.fs.copy(path.resolve(TRAILS_TEMPLATE, 'test', '**'), this.destinationPath('test'))
     this.fs.copy(path.resolve(TRAILS_TEMPLATE, 'test', '.*'), this.destinationPath('test'))
   },
